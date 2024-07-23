@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-arg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style_menu.css" />    
+  </head>
+
+  <body>
+    <header class="header__">
+      <nav class="header__nav">
+        <a class="header__nav__href" href="index.html">Home</a>
+        <a class="header__nav__href" href="acerca.html">Acerca de</a>
+      </nav>
+    </header>
+
+    <main class="pantalla_principal">
+      <span class="pantalla_principal__solicitud">
+        <h1 class="pantalla_principal__solicitud__titulo">
+          Encriptador - Desencriptador
+        </h1>
+        <textarea
+          class="pantalla_principal__solicitud__textarea"
+          onkeypress="validarTecla(event);"
+          oninput="chequearQueHayaTexto(); resolverModo();"
+          placeholder="Escriba el texto a encriptar/desencriptar aquí..."
+          rows="40"
+          cols="85"
+          autofocus="true"
+          id="textarea_1"
+        ></textarea>
+        <spam class="pantalla_principal__solicitud__exclamacionytexto">
+          <img
+            src="./assets/bi_exclamation-circle-fill.png"
+            alt="imagen de signo exclamación"
+          />
+          <p class="pantalla_principal__solicitud__aclaracion">
+            Solo letras minúsculas y sin acento
+          </p>
+        </spam>
+        <!--<div class="pantalla_principal__solicitud__botones">-->
+        <div class="pantalla_principal__solicitud__radio-group">
+          <input
+            type="radio"
+            id="optionEncriptar"
+            name="modoDeUso"
+            value="1"
+            checked
+            onclick="btnEncriptar();"
+          />
+          <label for="optionEncriptar">Modo Encriptación</label>
+
+          <input
+            type="radio"
+            id="optionDesencriptar"
+            name="modoDeUso"
+            value="2"
+            onclick="btnDesencriptar();"
+          />
+          <label for="optionDesencriptar">Modo Desencriptación</label>
+          <!--
+          <button class="pantalla_principal__solicitud__boton" onclick="btnEncriptar();" id="btnEncriptar" >Encriptar</button>
+          <button class="pantalla_principal__solicitud__boton" onclick="btnDesencriptar();" id="btnDesencriptar">Desencriptar</button>
+          -->
+        </div>
+      </span>
+      <span class="pantalla_principal__respuesta">
+        <span id="mostrarCartelDeNoyTexto">
+          <img src="./assets/Muñeco.png" alt="Imagen de muñeco" />
+          <span class="pantalla_principal__respuesta_ningunmensaje_y_aclaracion">
+            <p class="pantalla_principal__respuesta_ningunmensaje">Ningún mensaje fue encontrado</p>
+            <p class="pantalla_principal__respuesta_aclaración">Ingresa el texto que desees encriptar o desencriptar.</p>
+          </span>
+        </span>
+        <span
+          class="pantalla_principal__respuesta_texto_y_copiar"
+          id="mostrarResultado"
+          style="display: none"
+        >
+          <p
+            class="pantalla_principal__respuesta_texto"
+            id="respuesta_texto"
+          ></p>
+          <button
+            class="pantalla_principal__respuesta__copiar"
+            onclick="btnCopiarTextoAlPortapapeles();"
+          >
+            Copiar
+          </button>
+        </span>
+      </span>
+    </main>
+
+    <footer>
+      <p class="footer__texto">Desarrollado por Laura Kees - 2024</p>
+    </footer>
+
+    <script src="encriptador.js"></script>
+  </body>
+</html>

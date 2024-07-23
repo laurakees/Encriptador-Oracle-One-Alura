@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --color-primario: #e5e5e5;
+  --color-secundario: #0a3871;
+  --color-boton-sin-hover: #d8dfe8;
+  --alturaSpanPrincipales: 768px
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-primario);
+  /*  height: 100vh; */
+  box-sizing: border-box;
+}
+
+.pantalla_principal {
+  display: flex;
+  align-items: center;
+  margin: 1.25%;
+  padding: 0% 0% 0% 22%;
+  gap: 80px;
+}
+
+.pantalla_principal__solicitud {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  height: var(--alturaSpanPrincipales);
+  gap: 15px;
+}
+
+.pantalla_principal__solicitud__titulo {
+  color: var(--color-secundario);
+  font-size: 1.75rem;
+  padding: 1% 0% 2% 0%;
+}
+
+.pantalla_principal__solicitud__textarea {
+  font-size: 1.25rem;
+  color: var(--color-secundario);
+  width: 98%;
+  padding: 1% 1% 1% 1%;
+  background-color: var(--color-primario);
+  border-color: #495057;
+  border-radius: 12px;
+}
+
+.pantalla_principal__solicitud__exclamacionytexto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pantalla_principal__solicitud__aclaracion {
+  font-size: 0.75rem;
+  color: #495057;
+}
+
+.pantalla_principal__solicitud__botones {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+/* Diseño con botones html
+.pantalla_principal__solicitud__boton {
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  font-size: 1rem;
+  font-weight: 400;
+  background: var(--color-boton-sin-hover);
+  border: 2px solid var(--color-secundario);
+  text-align: center;
+  color: var(--color-secundario);
+  border-radius: 24px;
+  margin-bottom: 1rem;
+}
+
+.pantalla_principal__solicitud__boton:hover {
+  background-color: var(--color-secundario);
+  color: white;
+}
+*/
+
+/* Diseño con radio button html */
+.pantalla_principal__solicitud__radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.pantalla_principal__solicitud__radio-group input[type="radio"] {
+  display: none;
+}
+
+.pantalla_principal__solicitud__radio-group label {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--color-terciario);
+  border: 1px solid var(--color-secundario);
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.pantalla_principal__solicitud__radio-group input[type="radio"]:checked  + label {
+  background-color: var(--color-secundario);
+  color: white;
+  border: 1px solid var(--color-secundario);
+}
+
+.pantalla_principal__respuesta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  width: 400px;
+  height: var(--alturaSpanPrincipales);
+  background-color: white;
+}
+
+.pantalla_principal__respuesta_texto_y_copiar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.pantalla_principal__respuesta_texto {
+  font-size: 1.25rem;
+  width: 336px;
+  height: 550px;
+  word-break: break-word;
+  padding: 5% 0% 0% 3%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pantalla_principal__respuesta__copiar {
+  width: 279px;
+  height: 67px;
+  padding: 24px;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--color-boton-sin-hover);
+  border: 2px solid var(--color-secundario);
+  text-align: center;
+  color: var(--color-secundario);
+  border-radius: 24px;
+  margin-bottom: 1rem;
+}
+
+.pantalla_principal__respuesta__copiar:hover {
+  background-color: var(--color-secundario);
+  color: white;
+}
+
+.pantalla_principal__respuesta_ningunmensaje_y_aclaracion {
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.pantalla_principal__respuesta_ningunmensaje {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.pantalla_principal__respuesta_aclaracion {
+  font-size: 1rem;
+}
+
+.footer__texto {
+  text-align: center;
+  background-color: var(--color-secundario);
+  color: var(--color-primario);
+  padding: 24px;
+  font-weight: 300;
+  font-size: 1rem;
+}
+@media (max-width: 1350px) {
+  .pantalla_principal {
+    flex-direction: column;
+
+    padding: 0% 0% 0% 3%;
+    margin: 2%;
+    gap: 15px;
+  }
+  .pantalla_principal__solicitud {
+    width: 90%;
+  }
+  .pantalla_principal__solicitud__radio-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .pantalla_principal__solicitud__radio-group label {
+    width: 50%;
+  }
+  .pantalla_principal__respuesta {
+    width: 90%;
+  }
+  .pantalla_principal__respuesta_texto_y_copiar {
+    width: 90%;
+  }
+  .pantalla_principal__respuesta_texto {
+    width: 90%;
+  }
+  .pantalla_principal__respuesta__copiar {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .pantalla_principal__solicitud__radio-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pantalla_principal__solicitud__radio-group label {
+    width: 90%;
+  }
+}

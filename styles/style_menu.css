@@ -1,0 +1,24 @@
+.header__ {
+  background-color: var(--color-secundario);
+  color: var(--color-primario);
+  padding: 1%;
+  font-weight: 300;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  padding: 0% 0% 0% 5%;
+}
+
+.header__nav__href{
+  color: var(--color-primario);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header__nav__href:hover {
+  text-decoration: underline;
+}
+

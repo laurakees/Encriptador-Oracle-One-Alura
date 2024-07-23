@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-arg">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/style_menu.css" />
+  <link rel="stylesheet" href="styles/style_acerca.css" />
+</head>
+
+<body>
+  <header class="header__"> 
+    <nav class="header__nav">
+      <a class="header__nav__href" href="index.html">Home</a>
+      <a class="header__nav__href" href="acerca.html">Acerca de</a>
+    </nav>  
+  </header>
+
+  <main class="acerca__main">
+    <h1>Encriptador/desencriptador</h1>
+    <p class="acerca__main__presentación">Versión final del challenge ENCRIPTADOR</p>
+    <p class="acerca__main__presentación">Oracle + Alura</p>
+
+    <h2>Herramientas utilizadas:</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Flex-box</li>
+    </ul>
+
+    <h2>Hecho por:</h2>
+    <h4>Laura Kees</h4>
+    <p>Linkedin: <a href="https://www.linkedin.com/in/laura-kees/" target="_blank">www.linkedin.com/in/laura-kees/</a></p>
+
+    <h2>Consigna de trabajo</h2>
+
+    <h3>Descripción</h3>
+    <p>Las "llaves" de encriptación que utilizaremos son las siguientes:</p>
+    <ul>
+    <li>La letra "e" es convertida para "enter"</li>
+      <li>La letra "i" es convertida para "imes"</li>
+      <li>La letra "a" es convertida para "ai"</li>
+      <li>La letra "o" es convertida para "ober"</li>
+      <li>La letra "u" es convertida para "ufat"</li>
+    </ul>
+
+    <h3>Requisitos:</h3>
+    <p>Debe funcionar solo con letras minúsculas. No deben ser utilizadas letras con acentos ni caracteres especiales. Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.</p>
+    <p>Por ejemplo:</p>
+    <ul>
+      <li>"gato" => "gaitober"</li>
+      <li>"gaitober" => "gato"</li>
+    </ul>
+    <p>La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones. El resultado debe ser mostrado en la pantalla.</p>
+
+    <h3>Extras:</h3>
+    <p>Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.</p>
+
+    <h3>Plantilla Figma:</h3>      
+    <p>Plantilla propuesta para la implementación de este desafío: <a href="https://www.figma.com/design/7YFEO573io4b0JF4R0qTnG/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica-(Copy)?node-id=0-1&t=ljJlxNrkfZ9XoTCX-1" target="_blank">Plantilla Figma</a></p>
+    <p>Recuerda que puedes usar CSS para modificar colores y fuentes, adicionar bordes y hasta hacer animaciones! Por ejemplo:</p>
+    <ul>
+      <li>Cambiar la fuente, el tamaño y el color del título;</li>
+      <li>Adicionar un color, degradado o imagen como fondo de tu sitio web;</li>
+      <li>Cambiar estilos, colores y bordes de los botones, explotar tu creatividad o puedes replicar exactamente el mismo diseño presentado, todo quedará a tu criterio.</li>
+    </ul>
+
+    <h2>Funcionamiento</h2>
+    <p>La pantalla principal de la aplicación ofrece un amplio cuadro de texto donde ingresar el texto a encriptar o desencriptar.</p> 
+    <p>La operación a realizar (encriptación o desencriptación) dependerá del modo de trabajo seleccionado (mediante uno de dos botones que se disponen debajo del cuadro de texto).</p> 
+    <p>En la medida que se va escribiendo en el cuadro de texto, se va mostrando dicho texto encriptado/desencriptado.</p>
+  </main>
+
+  <footer> 
+    <p class="footer__texto">Desarrollado por Laura Kees - 2024</p>
+  </footer>
+
+  <script src="encriptador.js"></script>
+</body>
+
+</html>
