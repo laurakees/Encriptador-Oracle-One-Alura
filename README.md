@@ -48,12 +48,15 @@ Recuerda que puedes usar CSS para modificar colores y fuentes, adicionar bordes 
 ## Funcionamiento
 - La pantalla principal de la aplicación ofrece un amplio cuadro de texto donde ingresar el texto a encriptar o desencriptar.
   
-  ![image](https://github.com/user-attachments/assets/66d060b2-01e9-4abd-bfd1-677785d80213)
+  ![image](https://github.com/user-attachments/assets/769dfb7d-3949-44ea-97d7-aeb68f986340)
+  
   
 - La operación a realizar (encriptación o desencriptación) dependerá del modo de trabajo seleccionado (mediante uno de dos botones que se disponen debajo del cuadro de texto).
     
-  ![image](https://github.com/user-attachments/assets/9a1c7868-6974-4a7d-9252-d835532d9862)
+  ![image](https://github.com/user-attachments/assets/788e7e01-c221-4df8-8362-43d77f730b88)
 
-  ![image](https://github.com/user-attachments/assets/bf8a2891-e1bc-4ea7-826b-12ae8d6a25ef)
+
+  ![image](https://github.com/user-attachments/assets/d3f5b796-76c4-4197-8b24-24b563dbe639)
+
 
 - En la medida que se va escribiendo en el cuadro de texto, se va mostrando dicho texto encriptado/desencriptado.
